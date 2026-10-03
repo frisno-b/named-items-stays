@@ -1,4 +1,4 @@
-# Named Items Stay
+# Named Items Stays
 
 A Minecraft Java data pack that allows selected named items to avoid despawning.
 Compatible Versions 26.2 and 26.3.
