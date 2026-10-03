@@ -26,7 +26,7 @@ Be aware that item groups start with "# and last item row has no comma.
 
 
 
-#In order to remove all undespawned items:
+# In order to remove all undespawned items:
 
 Run this commands after removing the data pack to remove dropped "loaded" items:
 
