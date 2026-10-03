@@ -1,0 +1,1 @@
+schedule function named-items-stays:tick 30s
