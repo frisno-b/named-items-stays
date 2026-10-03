@@ -1,7 +1,7 @@
 # Named Items Stay
 
 A Minecraft Java datapack that allows selected named items to avoid despawning.
-
+Versions 26.2 and 26.3
 
 In order to remove all undespawned items:
 Run this commands after removing the datapack to remove dropped "loaded" items:
