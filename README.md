@@ -3,9 +3,16 @@
 A Minecraft Java data pack that allows selected named items to avoid despawning.
 Compatible Versions 26.2 and 26.3.
 
+## Configuration
+
 You can edit the file "eligible.json" to include the types of named items that should be affected by this data pack.
 
-Currently these groups are included:
+```text
+data/named-items-stays/tags/item/eligible.json
+```
+
+
+The current configuration includes these item groups:
 
     "#minecraft:swords",
     "#minecraft:axes",
@@ -15,29 +22,32 @@ Currently these groups are included:
     "#minecraft:spears",
     "#minecraft:trimmable_armor",
 
-And these items: 
+It also includes these individual items:
 
     "minecraft:elytra",
     "minecraft:shield",
     "minecraft:mace",
     "minecraft:trident"
 
-Be aware that item groups start with "# and last item row has no comma.
+Item groups begin with #. Individual item IDs do not.
+When adding multiple entries to the JSON file, every entry except the last one needs a comma.
 
 
 
-# In order to remove all undespawned items:
-
-Run this commands after removing the data pack to remove dropped "loaded" items:
+# Removing protected items
+After removing the data pack, run this command to remove protected dropped items from currently loaded areas:
 
 /kill @e[type=item,tag=no_despawn]
 
 
-
-For automatic removal from areas as they load in, configure a command block as:
+Automatic removal
+To remove protected items automatically as areas load, configure a command block with:
 
 Type: Repeating
 Condition: Unconditional
 Redstone: Always Active
+Use this command:
 
-kill @e[type=item,tag=no_despawn]
+kill @e[type=item,tag=no\_despawn]
+
+Do not include a leading / when entering the command in a command block.
